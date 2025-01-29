@@ -749,3 +749,54 @@
 	});	
 
 })(window.jQuery);
+
+
+
+var swiper = new Swiper(".swiper", {
+    loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 3, // Adjust based on layout
+    spaceBetween: 30,
+    centeredSlides: false, // Ensures uniform alignment
+    breakpoints: {
+        1024: { slidesPerView: 3 }, // Desktop
+        768: { slidesPerView: 2 }, // Tablet
+        480: { slidesPerView: 1 }  // Mobile
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+var swiper = new Swiper(".sliding", {
+    loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 1, // Adjust based on layout
+    spaceBetween: 10,
+    centeredSlides: false, // Ensures uniform alignment
+    breakpoints: {
+        1024: { slidesPerView: 3 }, // Desktop
+        768: { slidesPerView: 2 }, // Tablet
+        480: { slidesPerView: 1 }  // Mobile
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+
